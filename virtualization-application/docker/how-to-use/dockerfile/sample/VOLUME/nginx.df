@@ -1,0 +1,6 @@
+FROM nginx:origin
+
+VOLUME /var/log/nginx
+
+CMD ["nginx", "-g", "daemon off;"]
+

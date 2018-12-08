@@ -1,0 +1,126 @@
+Language Selection
+
+Please select the installation language
+[1] English - English
+[2] French - Français
+[3] Spanish - Español
+[4] Italian - Italiano
+[5] German - Deutsch
+[6] Japanese - 日本語
+[7] Dutch - Nederlands
+[8] Russian - Русский
+[9] Simplified Chinese - 简体中文
+[10] Norwegian - Norsk bokmål
+[11] Brazilian Portuguese - Português Brasileiro
+Please choose an option [1] : 
+----------------------------------------------------------------------------
+Welcome to the Alfresco Community Setup Wizard.
+
+----------------------------------------------------------------------------
+Installation Type
+
+[1] Easy - Install using the default configuration.
+[2] Advanced - Configure server ports and service properties.: Choose optional components to install.
+Please choose an option [1] :
+----------------------------------------------------------------------------
+Select the components you want to install; clear the components you do not want
+to install. Click Next when you are ready to continue.
+
+Java [Y/n] : Y
+PostgreSQL [Y/n] : Y
+LibreOffice [Y/n] : Y
+Alfresco Community : Y (Cannot be edited)
+
+Solr1 [y/N] : Y
+Solr4 [Y/n] : Y
+Alfresco Office Services [Y/n] : Y
+Web Quick Start [y/N] : Y
+Google Docs Integration [Y/n] : Y
+Is the selection above correct? [Y/n]: Y
+----------------------------------------------------------------------------
+Installation Folder
+
+Choose a folder to install Alfresco Community.
+
+Select a folder: [/opt/alfresco-community]:
+----------------------------------------------------------------------------
+Database Server Parameters
+
+Enter the port of your database.
+
+Database Server Port: [5432]: 7732
+----------------------------------------------------------------------------
+Tomcat Port Configuration
+
+Enter your Tomcat configuration parameters.
+
+Web Server Domain: [127.0.0.1]: nagato.yukifans.com
+Tomcat Server Port: [8080]: 7780
+Tomcat Shutdown Port: [8005]: 7705
+Tomcat SSL Port: [8443]: 7743
+Tomcat AJP Port: [8009]: 7709
+----------------------------------------------------------------------------
+LibreOffice Server Port
+
+Enter the port that the LibreOffice Server will listen to.
+
+LibreOffice Server Port: [8100]: 7700
+----------------------------------------------------------------------------
+FTP Port
+
+Choose a port number for the integrated FTP server.
+
+Port: [21]: 7721
+----------------------------------------------------------------------------
+Admin Password
+
+Specify a password for the Alfresco Content Services administrator account.
+
+Admin Password: : 
+Repeat Password: :
+----------------------------------------------------------------------------
+Install as a service
+
+If you register Alfresco Community as a service it will automatically start
+Alfresco Community on machine startup.
+
+Install Alfresco Community as a service? [Y/n]: Y
+
+----------------------------------------------------------------------------
+Setup is now ready to begin installing Alfresco Community on your computer.
+
+Do you want to continue? [Y/n]: Y
+----------------------------------------------------------------------------
+Please wait while Setup installs Alfresco Community on your computer.
+
+ Installing
+ 0% ______________ 50% ______________ 100%
+ ########################################
+
+----------------------------------------------------------------------------
+Setup has finished installing Alfresco Community on your computer.
+
+View Readme File [Y/n]: Y
+Launch Alfresco Community [Y/n]: Y
+waiting for server to start....README
+Alfresco Community (Build: 201701)
+===============================
+
+Contains:
+        - Alfresco Platform:    5.2.e
+        - Alfresco Share:               5.2.d
+
+For users of Alfresco Community Edition, more information on this release is
+available at https://community.alfresco.com/community/ecm
+
+Press [Enter] to continue: done
+server started
+/opt/alfresco-community/postgresql/scripts/ctl.sh : postgresql  started at port 7732
+Using CATALINA_BASE:   /opt/alfresco-community/tomcat
+Using CATALINA_HOME:   /opt/alfresco-community/tomcat
+Using CATALINA_TMPDIR: /opt/alfresco-community/tomcat/temp
+Using JRE_HOME:        /opt/alfresco-community/java
+Using CLASSPATH:       /opt/alfresco-community/tomcat/bin/bootstrap.jar:/opt/alfresco-community/tomcat/bin/tomcat-juli.jar
+Using CATALINA_PID:    /opt/alfresco-community/tomcat/temp/catalina.pid
+Tomcat started.
+/opt/alfresco-community/tomcat/scripts/ctl.sh : tomcat started

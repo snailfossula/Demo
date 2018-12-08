@@ -1,0 +1,9 @@
+FROM nginx:origin
+
+WORKDIR /etc/nginx
+RUN pwd \ 
+	&& ls -l \
+	&& cd conf.d
+WORKDIR test-dir
+RUN pwd \
+	&& ls -l

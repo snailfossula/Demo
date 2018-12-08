@@ -1,0 +1,4 @@
+FROM nginx:origin 
+
+CMD ["service", "nginx", "start"]
+

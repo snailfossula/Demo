@@ -1,0 +1,17 @@
+# HTTP server
+#
+server {
+        listen 80;
+        listen [::]:80 ipv6only=on;
+
+        root /usr/share/nginx/html;
+        index index.html index.htm;
+
+        server_name localhost;
+
+        location /.well-known/ {
+                root /usr/share/nginx/html;
+        }
+
+        rewrite ^/ https://nagato.yukifans.com$request_uri;
+}
